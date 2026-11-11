@@ -1,0 +1,44 @@
+/* Estilos del módulo Drones X: un solo color base (azul) */
+main {
+  max-width: 420px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #1a4f8b;
+}
+
+.tarjeta {
+  border: 2px solid #1a4f8b;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+button {
+  background: #1a4f8b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.enlace {
+  background: none;
+  color: #1a4f8b;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.error {
+  color: red;
+}

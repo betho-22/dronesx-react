@@ -1,16 +1,30 @@
-# React + Vite
+﻿# Drones X - Módulo de login y registro (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Módulo web del proyecto Drones X (SENA), desarrollado con React.
+Evidencia GA7-220501096-AA3-EV01.
 
-Currently, two official plugins are available:
+## Tecnologías
+- React (componentes y estado con hooks)
+- Vite (herramienta de desarrollo)
+- Oxlint (revisión de estándares de código)
+- localStorage del navegador (simula la base de datos en esta etapa)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
+- Registro de usuario: documento, nombre completo, fecha de nacimiento, celular, correo y contraseña
+- Validaciones: documento numérico, celular de 10 dígitos, contraseña de mínimo 4 caracteres y documento no repetido
+- Inicio de sesión con documento y contraseña
+- Pantalla de bienvenida y cierre de sesión
 
-## React Compiler
+## Estructura
+- `src/components`: componentes Login y Registro
+- `src/services`: servicio de usuarios (registro y validación)
+- `src/App.jsx`: componente principal que controla las pantallas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Cómo ejecutarlo
+1. Instalar Node.js (versión LTS)
+2. Instalar dependencias: `npm install`
+3. Iniciar el servidor: `npm run dev`
+4. Abrir `http://localhost:5173/`
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Autor
+Adalberto Acosta Toncel

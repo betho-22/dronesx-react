@@ -30,9 +30,17 @@ function Registro({ onRegistrado, onIrALogin }) {
   const manejarEnvio = (evento) => {
     evento.preventDefault();
 
-    // Validaciones básicas (las reglas definitivas pueden ajustarse)
+    // Validaciones (se revisan en el orden del formulario)
     if (!/^\d+$/.test(datos.documento)) {
       setError("El documento debe contener solo números");
+      return;
+    }
+    if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/.test(datos.nombre)) {
+      setError("El nombre solo puede contener letras y espacios");
+      return;
+    }
+    if (new Date(datos.fechaNacimiento) > new Date()) {
+      setError("La fecha de nacimiento no puede ser futura");
       return;
     }
     if (!/^\d{10}$/.test(datos.celular)) {
